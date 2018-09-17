@@ -7,10 +7,7 @@ curly braces: ()[]{}.
 """
 
 def validBraces(string):
-    string_copy = string
-    for dummy in range(len(string)):
+    while "()" in string or "[]" in string or "{}" in string:
         for pair in ["[]", "{}", "()"]:
-            string_copy = string_copy.replace(pair, "")
-        if len(string_copy) == 0:
-            return True
-    return False
+            string = string.replace(pair, "")
+    return len(string) == 0
