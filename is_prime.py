@@ -1,3 +1,8 @@
+"""
+Define a function isPrime/is_prime() that takes one integer argument and returns 
+True or False depending on if the integer is a prime.
+"""
+
 def is_prime(num):
   if num <= 1:
   	return False
