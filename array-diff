@@ -5,4 +5,4 @@ It should remove all values from list a, which are present in list b.
 """
 
 def array_diff(a, b):
-    return list(filter(lambda x: x != None, [(None if item in b else item) for item in a]))
+    return filter(lambda x: x not in b, a)
